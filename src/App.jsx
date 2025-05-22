@@ -124,7 +124,7 @@ export default function App() {
 			ref={scrollRef}
 			className="relative h-[500vh] bg-gray-900"
 		>
-			<MotionBox className="sticky lg:top-20 h-[90vh] lg:h-[80vh] flex justify-center">
+			<MotionBox className="sticky top-8 lg:top-20 h-[90vh] lg:h-[80vh] flex justify-center">
 				<AnimatePresence mode="wait">
 					<MotionBox
 						key={section}
@@ -147,7 +147,7 @@ export default function App() {
 									repeat: Infinity,
 									ease: "easeInOut",
 								}}
-								className="absolute -top-12 left-1/2 transform -translate-x-1/2"
+								className="absolute -top-8 left-1/2 transform -translate-x-1/2"
 							>
 								<Tooltip title="Scroll Up" ref={toolTipRef}>
 									<IconButton onClick={HandleScrollUpClick}>
