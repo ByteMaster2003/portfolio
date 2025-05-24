@@ -73,6 +73,15 @@ export default function App() {
 		}
 
 		setSection(res.index);
+		setSection(() => {
+				if (scrollRef.current) {
+					window.scrollTo({
+						top: res.index * (scrollRef.current?.clientHeight / 5),
+						behavior: "smooth",
+					});
+				}
+				return res.index;
+			});
 	};
 
 	const contentMap = [

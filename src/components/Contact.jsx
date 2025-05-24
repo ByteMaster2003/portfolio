@@ -6,6 +6,7 @@ import {
 import { Box, Button, TextField, Link } from "@mui/material";
 import { motion } from "motion/react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { nanoid } from "nanoid";
@@ -69,12 +70,12 @@ export default function Contact() {
 			payload
 		);
 		if (response.data?.statusCode != 200) {
-			alert(response.data?.message || "Something went wrong!");
+			toast.error(response.data?.message || "Something went wrong!", { position: "top-center" })
 		}
 		if (response.data?.data?.state !== formState) {
-			alert("Potential CSRF Attack! Please don't do this");
+			toast.error("Potential CSRF Attack! Please don't do this", { position: "top-center" })
 		}
-		alert(response.data?.message);
+		toast.success(response.data?.message, { position: "top-center" })
 
 		reset();
 		setIsSubmitting(false);
