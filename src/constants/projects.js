@@ -6,7 +6,7 @@ export const projects = [
 		techs: ["rust"],
 		github: "https://github.com/ByteMaster2003/version_it",
 		live: "",
-		image: "/projects/vit_image.png",
+		image: "/projects/vit_image.webp",
 	},
 	{
 		title: "Create Private VPN server",
@@ -16,7 +16,7 @@ export const projects = [
 		github: "",
 
 		live: "https://www.linkedin.com/posts/developer-vivek-sahani_cybersecurity-wireguard-vpn-activity-7326318508177313793-2f6K?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeyNmwB6KfmuZEyEvHwAq5MrBRxHqnFh0o",
-		image: "/projects/private_vpn.png",
+		image: "/projects/private_vpn.webp",
 	},
 	{
 		title: "Deploy Web App on Tor Network",
@@ -32,7 +32,7 @@ export const projects = [
 		],
 		github: "",
 		live: "https://www.linkedin.com/posts/developer-vivek-sahani_tornetwork-nodejs-selfhosting-activity-7326660434483122176-kDny?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeyNmwB6KfmuZEyEvHwAq5MrBRxHqnFh0o",
-		image: "/projects/tor_network.png",
+		image: "/projects/tor_network.webp",
 	},
 	{
 		title: "WhatsApp Quiz Bot",
@@ -41,7 +41,7 @@ export const projects = [
 		techs: ["Python", "Twilio", "Flask"],
 		github: "https://github.com/VivekSite/send-whatsapp-messages-twilio",
 		live: "https://drive.google.com/file/d/1gjRTsG4wvgwFR8Z5RmoEGjoL3w7KFEYA/view",
-		image: "/projects/quiz_bot.png",
+		image: "/projects/quiz_bot.webp",
 	},
 	{
 		title: "Password Manager",
@@ -50,7 +50,7 @@ export const projects = [
 		techs: ["Python", "Hybrid_Encryption"],
 		github: "https://github.com/ByteMaster2003/pass_manager",
 		live: "",
-		image: "/projects/password_manager.png",
+		image: "/projects/password_manager.webp",
 	},
 	{
 		title: "Ecommerce App",
@@ -59,7 +59,7 @@ export const projects = [
 		techs: ["MongoDB", "ExpressJs", "NodeJs", "Angular", "PrimeNg"],
 		github: "https://github.com/VivekSite/online-shop-backend",
 		live: "https://online-shop-ten-ruddy.vercel.app",
-		image: "/projects/online_shop.png",
+		image: "/projects/online_shop.webp",
 	},
 	{
 		title: "Chat Application (Messenger Clone)",
@@ -68,6 +68,6 @@ export const projects = [
 		techs: ["MongoDB", "NextJs", "NodeJs", "Pusher"],
 		github: "https://github.com/VivekSite/messenger-clone",
 		live: "https://messenger-clone-ten-lovat.vercel.app",
-		image: "/projects/chat_app.png",
+		image: "/projects/chat_app.webp",
 	},
 ];
