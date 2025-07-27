@@ -17,7 +17,7 @@ export default function TerminalPrompt({
 				variant="h6"
 				className="text-gray-400"
 			>
-				<span className="text-green-400">user@vivek:~$&nbsp;</span>
+				<span className="text-green-400">developer@vivek:~$&nbsp;</span>
 
 				{cursor ? (
 					<>
