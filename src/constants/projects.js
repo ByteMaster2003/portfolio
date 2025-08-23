@@ -1,5 +1,13 @@
 export const projects = [
 	{
+		title: "Null Talk",
+		description: `A CLI-based secure chat system built in Rust 🦀. A decentralised-style chat where each user has their own public/private key pair. Your user_id is derived from your public key — meaning you can safely share it to connect. All communication is encrypted end-to-end, so only the intended recipient can read the messages.`,
+		techs: ["rust", "tokio", "rustls", "async programming", "networking", "custom-protocol"],
+		github: "https://github.com/ByteMaster2003/null-talk",
+		live: "https://github.com/ByteMaster2003/null-talk/releases",
+		image: "/projects/null-talk.webp",
+	},
+	{
 		title: "Git Clone",
 		description:
 			"A lightweight version control system implemented in Rust, inspired by Git. This tool provides basic version control operations for tracking changes in your codebase.",
@@ -20,7 +28,8 @@ export const projects = [
 	},
 	{
 		title: "Deploy Web App on Tor Network",
-		description: "I built a Node.js backend Application and deploy it on the Tor network, accessible via a .onion address, hosted on my Raspberry Pi. Created Tor Hidden service with Nginx to handle Rest API requests",
+		description:
+			"I built a Node.js backend Application and deploy it on the Tor network, accessible via a .onion address, hosted on my Raspberry Pi. Created Tor Hidden service with Nginx to handle Rest API requests",
 		techs: [
 			"tor_network",
 			"nginx",
