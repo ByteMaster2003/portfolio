@@ -1,14 +1,17 @@
 export const socials = [
 	{
-		href: "https://github.com/ByteMaster2003",
-		name: "github"
+		prefix: "https://",
+		href: "www.linkedin.com/in/developer-vivek-sahani/",
+		name: "LinkedIn",
 	},
 	{
-		href: "https://github.com/VivekSite",
-		name: "github"
+		prefix: "https://",
+		href: "github.com/ByteMaster2003",
+		name: "GitHub",
 	},
 	{
-		href: "https://www.linkedin.com/in/developer-vivek-sahani/",
-		name: "linkedin"
-	}
-]
+		prefix: "mailto:",
+		href: "contact@viveksahani.com",
+		name: "Email",
+	},
+];
