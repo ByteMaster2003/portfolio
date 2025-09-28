@@ -3,6 +3,7 @@
 import {
 	GitHub as GitHubIcon,
 	OpenInNewOutlined as OpenInNewIcon,
+	LinkedIn as LinkedInIcon,
 } from "@mui/icons-material";
 import {
 	Box,
@@ -21,9 +22,7 @@ import { projects } from "../constants/projects.js";
 
 const MotionCard = motion.create(Card);
 
-export default function Projects({
-	handleCommand,
-}) {
+export default function Projects({ handleCommand }) {
 	const [displayHelp, setDisplayHelp] = useState(false);
 	const [command, setCommand] = useState("");
 	const [promptDone, setPromptDone] = useState(false);
@@ -128,6 +127,16 @@ export default function Projects({
 											className="text-green-400"
 										>
 											Live
+										</Button>
+									)}
+									{project.linkedIn && (
+										<Button
+											href={project.linkedIn}
+											target="_blank"
+											startIcon={<LinkedInIcon />}
+											className="text-green-400"
+										>
+											LinkedIn
 										</Button>
 									)}
 								</Box>

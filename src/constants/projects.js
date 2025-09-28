@@ -1,10 +1,28 @@
 export const projects = [
 	{
+		title: "Vault Manager – Secure Credential Management App",
+		description: `Built a cross-platform Vault Manager application in Flutter for managing passwords and sensitive credentials securely across mobile and desktop platforms. Implemented hybrid encryption (symmetric + asymmetric) to ensure data confidentiality and integrity.`,
+		techs: ["Flutter", "Dart", "Golang", "Cryptography"],
+		github: "https://github.com/ByteMaster2003/pass-dock",
+		live: "",
+		linkedIn: "https://linkedin.com/in/developer-vivek-sahani",
+		image: "/projects/pass_dock_macos.webp",
+	},
+	{
 		title: "Null Talk",
 		description: `A CLI-based secure chat system built in Rust 🦀. A decentralised-style chat where each user has their own public/private key pair. Your user_id is derived from your public key — meaning you can safely share it to connect. All communication is encrypted end-to-end, so only the intended recipient can read the messages.`,
-		techs: ["rust", "tokio", "rustls", "async programming", "networking", "custom-protocol"],
+		techs: [
+			"rust",
+			"tokio",
+			"rustls",
+			"async programming",
+			"networking",
+			"custom-protocol",
+		],
 		github: "https://github.com/ByteMaster2003/null-talk",
 		live: "https://github.com/ByteMaster2003/null-talk/releases",
+		linkedIn:
+			"https://www.linkedin.com/posts/developer-vivek-sahani_rust-cybersecurity-encryption-activity-7363834705701453825-yEjE?utm_source=share&utm_medium=member_desktop&rcm=ACoAADeyNmwB6KfmuZEyEvHwAq5MrBRxHqnFh0o",
 		image: "/projects/null-talk.webp",
 	},
 	{
@@ -14,6 +32,8 @@ export const projects = [
 		techs: ["rust"],
 		github: "https://github.com/ByteMaster2003/version_it",
 		live: "",
+		linkedIn:
+			"https://www.linkedin.com/posts/developer-vivek-sahani_rustlang-git-versioncontrol-activity-7327186092883873793-Femr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADeyNmwB6KfmuZEyEvHwAq5MrBRxHqnFh0o",
 		image: "/projects/vit_image.webp",
 	},
 	{
@@ -22,8 +42,9 @@ export const projects = [
 			"Build my own private VPN server on an EC2 instance using WireGuard to avoid the privacy risks associated with free VPNs. This DIY approach involved configuring network settings and routing traffic to ensure their real IP address is masked, emphasizing the importance of understanding internet fundamentals and taking control of one's online security.",
 		techs: ["nginx", "wireguard", "ec2_instance", "AWS", "Linux"],
 		github: "",
-
-		live: "https://www.linkedin.com/posts/developer-vivek-sahani_cybersecurity-wireguard-vpn-activity-7326318508177313793-2f6K?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeyNmwB6KfmuZEyEvHwAq5MrBRxHqnFh0o",
+		live: "",
+		linkedIn:
+			"https://www.linkedin.com/posts/developer-vivek-sahani_cybersecurity-wireguard-vpn-activity-7326318508177313793-2f6K?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeyNmwB6KfmuZEyEvHwAq5MrBRxHqnFh0o",
 		image: "/projects/private_vpn.webp",
 	},
 	{
@@ -40,7 +61,9 @@ export const projects = [
 			"linux",
 		],
 		github: "",
-		live: "https://www.linkedin.com/posts/developer-vivek-sahani_tornetwork-nodejs-selfhosting-activity-7326660434483122176-kDny?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeyNmwB6KfmuZEyEvHwAq5MrBRxHqnFh0o",
+		live: "",
+		linkedIn:
+			"https://www.linkedin.com/posts/developer-vivek-sahani_tornetwork-nodejs-selfhosting-activity-7326660434483122176-kDny?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeyNmwB6KfmuZEyEvHwAq5MrBRxHqnFh0o",
 		image: "/projects/tor_network.webp",
 	},
 	{
@@ -50,6 +73,7 @@ export const projects = [
 		techs: ["Python", "Twilio", "Flask"],
 		github: "https://github.com/VivekSite/send-whatsapp-messages-twilio",
 		live: "https://drive.google.com/file/d/1gjRTsG4wvgwFR8Z5RmoEGjoL3w7KFEYA/view",
+		linkedIn: "",
 		image: "/projects/quiz_bot.webp",
 	},
 	{
