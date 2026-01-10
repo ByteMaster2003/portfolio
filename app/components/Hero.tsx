@@ -74,18 +74,24 @@ export default function Hero() {
 						variants={itemVariants}
 						className="flex flex-col sm:flex-row items-center justify-center gap-4"
 					>
-						<Button
-							size="lg"
-							className="rounded-full px-8 h-12 text-base group"
+						<Link
+							href={"#case-studies"}
+							aria-label="View My Work"
+							className="cursor-pointer"
 						>
-							<Link href={"#case-studies"}>
-							View My Work</Link>
-							<ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-						</Button>
+							<Button
+								size="lg"
+								className="rounded-full px-8 h-12 text-base group cursor-pointer"
+								aria-label="View My Work"
+							>
+								View My Work
+								<ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+							</Button>
+						</Link>
 						<Button
 							size="lg"
 							variant="outline"
-							className="rounded-full px-8 h-12 text-base"
+							className="rounded-full px-8 h-12 text-base cursor-pointer"
 						>
 							Explore DevOps Stack
 						</Button>

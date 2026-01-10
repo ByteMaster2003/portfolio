@@ -5,7 +5,12 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { Menu, Laptop } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+	Sheet,
+	SheetContent,
+	SheetTitle,
+	SheetTrigger,
+} from "@/components/ui/sheet";
 
 const navLinks = [
 	{ name: "Services", href: "#services" },
@@ -17,6 +22,7 @@ const navLinks = [
 
 export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
 	// Handle scroll effect for glassmorphism
 	useEffect(() => {
@@ -40,7 +46,11 @@ export default function Navbar() {
 		>
 			<div className="container mx-auto px-6 flex items-center justify-between">
 				{/* Logo Section */}
-				<Link href="/" className="flex items-center gap-2 group">
+				<Link
+					href="/"
+					className="flex items-center gap-2 group"
+					aria-label="Logo"
+				>
 					<div className="bg-primary p-1.5 rounded-lg">
 						<Laptop className="w-5 h-5 text-primary-foreground" />
 					</div>
@@ -56,6 +66,7 @@ export default function Navbar() {
 							key={link.name}
 							href={link.href}
 							className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group"
+							aria-label="Navigation Menu"
 						>
 							{link.name}
 							<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
@@ -65,34 +76,51 @@ export default function Navbar() {
 
 				{/* CTA & Mobile Menu */}
 				<div className="flex items-center gap-4">
-					<Button
-						variant="default"
-						className="hidden md:flex rounded-full px-6"
+					<Link
+						href={"#contact"}
+						aria-label="Hire Me"
+						className=" cursor-pointer"
 					>
-						<Link href={"#contact"}>Hire Me</Link>
-					</Button>
+						<Button
+							variant="default"
+							className="hidden md:flex rounded-full px-6 cursor-pointer"
+							aria-label="Hire Me"
+						>
+							Hire Me
+						</Button>
+					</Link>
 
 					{/* Mobile Menu (shadcn Sheet) */}
 					<div className="md:hidden">
-						<Sheet>
-							<SheetTrigger asChild>
-								<Button variant="ghost" size="icon">
-									<Menu className="w-6 h-6" />
-								</Button>
+						<Sheet open={isOpen}>
+							<SheetTrigger
+								asChild
+								className=" cursor-pointer"
+								onClick={() => setIsOpen(true)}
+							>
+								<Menu className="size-7" />
 							</SheetTrigger>
 							<SheetContent side="right" className="w-75 sm:w-100">
-								<nav className="flex flex-col gap-6 mt-10">
+								<SheetTitle></SheetTitle>
+								<nav className="flex flex-col gap-6 mt-10 mx-10">
 									{navLinks.map((link) => (
 										<Link
 											key={link.name}
 											href={link.href}
+											onClick={() => setIsOpen(false)}
 											className="text-lg font-semibold hover:text-primary"
+											aria-label="Mobile Navigation Menu"
 										>
 											{link.name}
 										</Link>
 									))}
-									<Button className="w-full mt-4">Get a Quote</Button>
 								</nav>
+								<Button
+									className="mx-10 cursor-pointer"
+									onClick={() => setIsOpen(false)}
+								>
+									Close
+								</Button>
 							</SheetContent>
 						</Sheet>
 					</div>

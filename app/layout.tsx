@@ -25,6 +25,9 @@ export const metadata: Metadata = {
 		icon: "/icon.svg",
 		apple: "/apple-touch-icon.png",
 	},
+	alternates: {
+		canonical: "https://viveksahani.com/"
+	},
 	description:
 		"Expert MERN/MEAN Stack Developer and DevOps Engineer specializing in Kubernetes, AWS, and scalable system architecture.",
 	keywords: [

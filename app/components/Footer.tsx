@@ -19,6 +19,7 @@ export default function Footer() {
 						href="https://github.com/ByteMaster2003"
 						target="_blank"
 						className="text-muted-foreground hover:text-foreground"
+						aria-label="Visit my GitHub profile"
 					>
 						<Github size={20} />
 					</Link>
@@ -26,6 +27,7 @@ export default function Footer() {
 						href="https://www.linkedin.com/in/developer-vivek-sahani/"
 						target="_blank"
 						className="text-muted-foreground hover:text-foreground"
+						aria-label="Visit my LinkedIn profile"
 					>
 						<Linkedin size={20} />
 					</Link>
@@ -33,6 +35,7 @@ export default function Footer() {
 						href="https://x.com/viveksahani2003"
 						target="_blank"
 						className="text-muted-foreground hover:text-foreground"
+						aria-label="Visit my Twitter profile"
 					>
 						<Twitter size={20} />
 					</Link>
