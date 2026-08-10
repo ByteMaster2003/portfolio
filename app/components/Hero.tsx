@@ -2,11 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Terminal, Server, Code2 } from "lucide-react";
+import { ArrowRight, Server, Code2, Smartphone, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
-	// Animation variants for staggered text reveal
 	const containerVariants = {
 		hidden: { opacity: 0 },
 		visible: {
@@ -38,7 +37,7 @@ export default function Hero() {
 					{/* Badge */}
 					<motion.div
 						variants={itemVariants}
-						className="flex justify-center mb-6"
+						className="flex justify-center mb-6 gap-3 flex-wrap"
 					>
 						<span className="px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-medium flex items-center gap-2">
 							<span className="relative flex h-2 w-2">
@@ -47,6 +46,10 @@ export default function Hero() {
 							</span>
 							Available for new projects
 						</span>
+						<span className="px-4 py-1.5 rounded-full border border-purple-500/20 bg-purple-500/5 text-purple-400 text-sm font-medium flex items-center gap-2">
+							<Sparkles className="w-3.5 h-3.5" />
+							AI-Accelerated Workflow
+						</span>
 					</motion.div>
 
 					{/* Main Headline */}
@@ -54,8 +57,9 @@ export default function Hero() {
 						variants={itemVariants}
 						className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-linear-to-b from-foreground to-foreground/60"
 					>
-						Engineering <span className="text-blue-500">MERN</span> Solutions &{" "}
-						<span className="text-blue-500">Cloud</span> Operations
+						Engineering <span className="text-blue-500">Full-Stack</span>,{" "}
+						<span className="text-blue-500">Mobile</span> &{" "}
+						<span className="text-blue-500">Cloud</span> Systems
 					</motion.h1>
 
 					{/* Subtext */}
@@ -65,8 +69,9 @@ export default function Hero() {
 					>
 						Hi, I&apos;m{" "}
 						<span className="text-foreground font-semibold">Vivek Sahani</span>.
-						I build high-performance full-stack applications and orchestrate
-						scalable DevOps pipelines with Kubernetes.
+						I build high-performance web and cross-platform mobile apps with
+						Flutter, scale robust backend architectures, and leverage AI agents
+						to supercharge deployment velocity.
 					</motion.p>
 
 					{/* Buttons */}
@@ -93,14 +98,14 @@ export default function Hero() {
 							variant="outline"
 							className="rounded-full px-8 h-12 text-base cursor-pointer"
 						>
-							Explore DevOps Stack
+							Explore Tech Stack
 						</Button>
 					</motion.div>
 
 					{/* Floating Feature Icons (Subtle) */}
 					<motion.div
 						variants={itemVariants}
-						className="mt-20 grid grid-cols-3 gap-4 md:gap-8 border-t border-border/50 pt-10"
+						className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 border-t border-border/50 pt-10"
 					>
 						<div className="flex flex-col items-center gap-2">
 							<Code2 className="w-6 h-6 text-blue-500" />
@@ -109,15 +114,21 @@ export default function Hero() {
 							</span>
 						</div>
 						<div className="flex flex-col items-center gap-2">
-							<Server className="w-6 h-6 text-blue-500" />
+							<Smartphone className="w-6 h-6 text-cyan-500" />
+							<span className="text-xs uppercase tracking-widest font-bold text-muted-foreground">
+								Flutter Mobile
+							</span>
+						</div>
+						<div className="flex flex-col items-center gap-2">
+							<Server className="w-6 h-6 text-emerald-500" />
 							<span className="text-xs uppercase tracking-widest font-bold text-muted-foreground">
 								Infrastructure
 							</span>
 						</div>
 						<div className="flex flex-col items-center gap-2">
-							<Terminal className="w-6 h-6 text-blue-500" />
+							<Sparkles className="w-6 h-6 text-purple-500" />
 							<span className="text-xs uppercase tracking-widest font-bold text-muted-foreground">
-								Automation
+								AI & Vibe Coding
 							</span>
 						</div>
 					</motion.div>

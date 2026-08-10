@@ -56,6 +56,7 @@ export default function Contact() {
 				});
 				track("contact_form_error", { error: result.error });
 			}
+		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		} catch (error) {
 			toast.error("An unexpected error occurred.", {
 				position: "top-center",
@@ -131,6 +132,7 @@ export default function Contact() {
 									</SelectItem>
 									<SelectItem value="devops">DevOps & K8s</SelectItem>
 									<SelectItem value="backend">System Optimization</SelectItem>
+									<SelectItem value="flutter">Flutter Development</SelectItem>
 								</SelectContent>
 							</Select>
 							{errors.service && (

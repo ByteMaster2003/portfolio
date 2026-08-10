@@ -1,37 +1,40 @@
 import * as motion from "motion/react-client";
-import { Database, Globe, Container, GitMerge, Cpu } from "lucide-react";
+import { Globe, Container, GitMerge, Smartphone, Sparkles } from "lucide-react";
 
 const services = [
 	{
 		title: "Full Stack Development",
 		description:
-			"Building high-performance web applications using the MERN & MEAN stack. Scalable from day one.",
+			"Building high-performance web applications using the MERN & modern JavaScript/Rust stacks. Scalable from day one.",
 		icon: <Globe className="w-8 h-8 text-blue-500" />,
 		className: "md:col-span-2 md:row-span-1 bg-blue-500/5",
 	},
 	{
-		title: "Kubernetes & Cloud",
-		description: "Orchestrating containerized environments for maximum uptime.",
-		icon: <Container className="w-8 h-8 text-cyan-500" />,
+		title: "Cross-Platform Mobile Apps",
+		description:
+			"Crafting fluid, native-performance iOS and Android experiences using Flutter.",
+		icon: <Smartphone className="w-8 h-8 text-cyan-500" />,
 		className: "md:col-span-1 md:row-span-2 bg-cyan-500/5",
 	},
 	{
-		title: "CI/CD Pipelines",
-		description: "Automated testing and deployment workflows that save time.",
-		icon: <GitMerge className="w-8 h-8 text-purple-500" />,
+		title: "AI-Accelerated Engineering",
+		description:
+			"Leveraging advanced AI agents and vibe-coding workflows to multiply development velocity and ship code faster.",
+		icon: <Sparkles className="w-8 h-8 text-purple-500" />,
 		className: "md:col-span-1 md:row-span-1 bg-purple-500/5",
 	},
 	{
-		title: "Backend Architecture",
-		description: "Robust Node.js & Express systems with MongoDB/PostgreSQL.",
-		icon: <Database className="w-8 h-8 text-emerald-500" />,
+		title: "Kubernetes & Cloud",
+		description:
+			"Orchestrating containerized environments and pipelines for maximum uptime.",
+		icon: <Container className="w-8 h-8 text-emerald-500" />,
 		className: "md:col-span-1 md:row-span-1 bg-emerald-500/5",
 	},
 	{
-		title: "System Design",
+		title: "CI/CD & DevOps Automation",
 		description:
-			"Planning complex infrastructures that scale with your user base.",
-		icon: <Cpu className="w-8 h-8 text-orange-500" />,
+			"Automating deployment workflows, TLS configurations, and robust infrastructure scaling.",
+		icon: <GitMerge className="w-8 h-8 text-orange-500" />,
 		className: "md:col-span-2 md:row-span-1 bg-orange-500/5",
 	},
 ];
@@ -43,8 +46,8 @@ export default function Services() {
 				<div className="text-center mb-16">
 					<h2 className="text-3xl md:text-5xl font-bold mb-4">Core Services</h2>
 					<p className="text-muted-foreground max-w-2xl mx-auto">
-						Specialized in building modern web applications and automating cloud
-						infrastructure for global scale.
+						Specialized in building full-stack web, native mobile apps, and
+						automating cloud infrastructure with modern AI-driven workflows.
 					</p>
 				</div>
 
